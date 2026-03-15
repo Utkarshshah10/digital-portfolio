@@ -1,299 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Utkarsh Shah | SoC Design & Verification Engineer</title>
-
-<meta name="description" content="Portfolio of Utkarsh Shah - Electronics and Communication Engineering student specializing in SoC Design, RTL, AXI Protocols, and Hardware Verification.">
+<title>Utkarsh Shah | SoC Design Engineer</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 body{
-font-family:'Inter',sans-serif;
-background-color:#0f172a;
-color:#f8fafc;
+background:#0b0f19;
+color:#e5e7eb;
+font-family:Inter, sans-serif;
 }
 
-.gradient-text{
-background:linear-gradient(90deg,#38bdf8,#818cf8);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.green{
+color:#22c55e;
 }
+
+.card{
+background:#111827;
+border:1px solid #1f2937;
+border-radius:12px;
+padding:28px;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:#22c55e;
+transform:translateY(-5px);
+}
+
+.tag{
+background:#1f2937;
+padding:4px 10px;
+border-radius:6px;
+font-size:12px;
+margin-right:6px;
+color:#22c55e;
+}
+
 </style>
 
 </head>
 
-<body class="scroll-smooth">
+<body>
 
-<nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+<!-- NAVBAR -->
 
-<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<nav class="fixed w-full bg-black/70 backdrop-blur border-b border-gray-800 z-50">
 
-<span class="text-xl font-bold gradient-text">US.DESIGN</span>
+<div class="max-w-6xl mx-auto flex justify-between px-6 py-4">
 
-<div class="space-x-8 hidden md:flex">
+<h1 class="green font-bold text-xl">US.DESIGN</h1>
 
-<a href="#about" class="hover:text-sky-400 transition">About</a>
-<a href="#skills" class="hover:text-sky-400 transition">Skills</a>
-<a href="#projects" class="hover:text-sky-400 transition">Projects</a>
-<a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+<div class="space-x-6 text-sm">
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
 </div>
+
 </div>
+
 </nav>
 
 
-<section id="about" class="pt-32 pb-20 px-6">
+<!-- HERO -->
 
-<div class="max-w-6xl mx-auto text-center">
+<section class="pt-40 pb-32 text-center">
 
-<h2 class="text-sm font-semibold tracking-widest text-sky-400 uppercase mb-4">
-Hardware Design & Verification
-</h2>
+<h1 class="text-6xl font-bold mb-6">
 
-<h1 class="text-5xl md:text-7xl font-extrabold mb-6">
-UTKARSH <span class="gradient-text">SHAH</span>
+Utkarsh <span class="green">Shah</span>
+
 </h1>
 
-<p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
+<p class="text-gray-400 max-w-xl mx-auto mb-8">
 
-Specializing in AMBA AXI4 Interconnects, Assertion-Based Verification, and Edge-AI.
-Bridging the gap between RTL Design and research-grade hardware systems.
+Electronics & Communication Engineering student focusing on
+SoC Design, RTL Architecture, Hardware Verification and Edge-AI.
 
 </p>
 
 <div class="flex justify-center gap-4">
 
 <a href="#projects"
-class="bg-sky-600 hover:bg-sky-500 px-8 py-3 rounded-full font-semibold transition">
+class="bg-green-500 text-black px-6 py-3 rounded-lg">
+
 View Projects
+
 </a>
 
-<a href="mailto:avi2005jain@gmail.com"
-class="border border-slate-700 hover:border-sky-400 px-8 py-3 rounded-full font-semibold transition">
-Contact Me
+<a href="resume.pdf"
+class="border border-gray-600 px-6 py-3 rounded-lg">
+
+Download Resume
+
 </a>
 
 </div>
 
-</div>
 </section>
 
 
+<!-- ENGINEERING FOCUS -->
 
-<section id="skills" class="py-20 bg-slate-900/50">
+<section id="about" class="max-w-5xl mx-auto px-6 pb-24">
 
-<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold mb-6">
 
-<h3 class="text-3xl font-bold mb-12 text-center">
-Technical <span class="text-sky-400">Stack</span>
-</h3>
+Engineering <span class="green">Focus</span>
+
+</h2>
+
+<p class="text-gray-400 leading-relaxed">
+
+My work focuses on designing reliable digital hardware systems
+using modern SoC architectures and verification methodologies.
+I enjoy building scalable RTL designs and exploring hardware
+acceleration for machine learning applications.
+
+</p>
+
+</section>
 
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- SKILLS -->
 
-<div class="p-8 bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500/50 transition">
+<section id="skills" class="max-w-6xl mx-auto px-6 pb-24">
 
-<i class="fa-solid fa-microchip text-sky-400 text-3xl mb-4"></i>
+<h2 class="text-3xl font-bold mb-12">
 
-<h4 class="text-xl font-bold mb-4">Digital Design</h4>
+Core <span class="green">Skills</span>
 
-<ul class="text-slate-400 space-y-2">
+</h2>
 
-<li>Verilog (RTL & FSM)</li>
-<li>SystemVerilog (OOP/CRV)</li>
-<li>AXI4 / AXI-Lite Protocols</li>
-<li>Xilinx Vivado / Icarus</li>
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="card">
+
+<h3 class="green text-xl mb-4">RTL Design</h3>
+
+<ul class="text-gray-400">
+
+<li>Verilog</li>
+<li>SystemVerilog</li>
+<li>FSM Architecture</li>
+<li>AXI Protocols</li>
 
 </ul>
 
 </div>
 
+<div class="card">
 
+<h3 class="green text-xl mb-4">Verification</h3>
 
-<div class="p-8 bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500/50 transition">
-
-<i class="fa-solid fa-shield-check text-sky-400 text-3xl mb-4"></i>
-
-<h4 class="text-xl font-bold mb-4">Verification</h4>
-
-<ul class="text-slate-400 space-y-2">
+<ul class="text-gray-400">
 
 <li>SVA Assertions</li>
 <li>Functional Coverage</li>
-<li>Layered Testbenches</li>
+<li>Testbench Design</li>
 <li>UVM (Learning)</li>
 
 </ul>
 
 </div>
 
+<div class="card">
 
+<h3 class="green text-xl mb-4">AI & Software</h3>
 
-<div class="p-8 bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500/50 transition">
+<ul class="text-gray-400">
 
-<i class="fa-solid fa-brain text-sky-400 text-3xl mb-4"></i>
-
-<h4 class="text-xl font-bold mb-4">Software & AI</h4>
-
-<ul class="text-slate-400 space-y-2">
-
-<li>C++ / Python</li>
-<li>TinyML / Edge AI</li>
-<li>Digital Signal Processing</li>
-<li>SQL / Linux</li>
+<li>Python</li>
+<li>C++</li>
+<li>TinyML</li>
+<li>DSP</li>
 
 </ul>
 
 </div>
 
 </div>
-</div>
+
 </section>
 
 
+<!-- PROJECTS -->
+
+<section id="projects" class="max-w-6xl mx-auto px-6 pb-24">
+
+<h2 class="text-3xl font-bold mb-12">
+
+Featured <span class="green">Projects</span>
+
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
 
 
-<section id="projects" class="py-20 px-6">
+<div class="card">
 
-<div class="max-w-6xl mx-auto">
+<h3 class="text-xl font-bold mb-3">
 
-<h3 class="text-3xl font-bold mb-12 text-center">
-Featured <span class="text-sky-400">Projects</span>
+AXI4 Slave IP
+
 </h3>
 
+<p class="text-gray-400 mb-4">
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-
-
-<div class="bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500/50 transition">
-
-<div class="p-8">
-
-<h4 class="text-2xl font-bold mb-4">Full AXI4 Slave IP</h4>
-
-<p class="text-slate-400 mb-6 text-sm">
-
-Industry-standard AMBA AXI4-Full Slave IP supporting burst transactions.
-Verified with SystemVerilog testbench and assertion-based verification.
+Industry-standard AMBA AXI4 slave interface implemented
+in Verilog and verified with SystemVerilog assertions.
 
 </p>
 
-<a href="https://github.com/Utkarshshah10"
-target="_blank"
-class="text-sky-400 font-semibold text-sm flex items-center gap-2">
+<div class="mb-4">
 
-<i class="fa-brands fa-github"></i> View Source Code
+<span class="tag">Verilog</span>
+<span class="tag">AXI4</span>
+<span class="tag">RTL</span>
+
+</div>
+
+<a href="https://github.com/Utkarshshah10"
+class="green">
+
+View Repository
 
 </a>
 
 </div>
-</div>
 
 
+<div class="card">
 
-<div class="bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500/50 transition">
+<h3 class="text-xl font-bold mb-3">
 
-<div class="p-8">
+Edge-AI Predictive Maintenance
 
-<h4 class="text-2xl font-bold mb-4">Edge-AI Predictive Maintenance</h4>
+</h3>
 
-<p class="text-slate-400 mb-6 text-sm">
+<p class="text-gray-400 mb-4">
 
-TinyML model deployed on ESP32 for industrial machine fault detection
-with millisecond-level inference latency.
+TinyML model running on ESP32 for real-time industrial
+machine fault detection.
 
 </p>
 
-<a href="https://github.com/Utkarshshah10"
-target="_blank"
-class="text-sky-400 font-semibold text-sm flex items-center gap-2">
+<div class="mb-4">
 
-<i class="fa-brands fa-github"></i> View Project
+<span class="tag">TinyML</span>
+<span class="tag">ESP32</span>
+<span class="tag">Python</span>
+
+</div>
+
+<a href="https://github.com/Utkarshshah10"
+class="green">
+
+View Repository
 
 </a>
 
 </div>
-</div>
 
 
+<div class="card md:col-span-2">
 
-<div class="bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500/50 transition md:col-span-2">
+<h3 class="text-xl font-bold mb-3">
 
-<div class="p-8">
+UART Subsystem with Async FIFO
 
-<h4 class="text-2xl font-bold mb-4">
-UART Subsystem with Asynchronous FIFO
-</h4>
+</h3>
 
-<p class="text-slate-400 mb-6 text-sm">
+<p class="text-gray-400 mb-4">
 
-Full duplex UART transmitter and receiver integrated with TX/RX FIFOs.
-Designed FSM-based architecture handling clock domain crossing.
+Full-duplex UART communication module with TX/RX circular
+buffers handling clock domain crossing.
 
 </p>
 
-<a href="https://github.com/Utkarshshah10"
-target="_blank"
-class="text-sky-400 font-semibold text-sm flex items-center gap-2">
+<div class="mb-4">
 
-<i class="fa-brands fa-github"></i> View Source Code
+<span class="tag">Verilog</span>
+<span class="tag">FIFO</span>
+<span class="tag">UART</span>
+
+</div>
+
+<a href="https://github.com/Utkarshshah10"
+class="green">
+
+View Repository
 
 </a>
 
 </div>
-</div>
 
 </div>
-</div>
+
 </section>
 
 
+<!-- GITHUB -->
+
+<section class="text-center pb-24">
+
+<h2 class="text-3xl font-bold mb-8">
+
+GitHub <span class="green">Activity</span>
+
+</h2>
+
+<img src="https://github-readme-stats.vercel.app/api?username=Utkarshshah10&show_icons=true&theme=dark">
+
+</section>
 
 
-<section id="contact" class="py-20 bg-slate-900/50 border-t border-slate-800">
+<!-- CONTACT -->
 
-<div class="max-w-4xl mx-auto text-center px-6">
+<section id="contact" class="text-center pb-24">
 
-<h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+<h2 class="text-3xl font-bold mb-6">
 
-<p class="text-slate-400 mb-10">
+Let's <span class="green">Connect</span>
 
-Interested in SoC design, hardware verification, and TinyML systems.
-Open to research collaborations and internships.
+</h2>
 
-</p>
+<div class="flex justify-center gap-8 text-3xl">
 
-
-<div class="flex justify-center gap-8">
-
-<a href="mailto:avi2005jain@gmail.com"
-class="text-slate-300 hover:text-sky-400 text-4xl">
+<a href="mailto:avi2005jain@gmail.com">
 
 <i class="fa-solid fa-envelope"></i>
 
 </a>
 
-
-<a href="https://linkedin.com"
-target="_blank"
-class="text-slate-300 hover:text-sky-400 text-4xl">
-
-<i class="fa-brands fa-linkedin"></i>
-
-</a>
-
-
-<a href="https://github.com/Utkarshshah10"
-target="_blank"
-class="text-slate-300 hover:text-sky-400 text-4xl">
+<a href="https://github.com/Utkarshshah10">
 
 <i class="fa-brands fa-github"></i>
 
@@ -301,16 +354,18 @@ class="text-slate-300 hover:text-sky-400 text-4xl">
 
 </div>
 
-</div>
 </section>
 
 
+<!-- VISITOR COUNTER -->
 
-<footer class="py-8 text-center text-slate-600 text-sm border-t border-slate-800 bg-slate-900">
+<div class="text-center pb-10">
 
-<p>© 2026 Utkarsh Shah</p>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=Utkarshshah10.digital-portfolio">
 
-</footer>
+</div>
+
 
 </body>
+
 </html>
