@@ -3,62 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utkarsh Shah | SoC & Edge-AI Engineer</title>
+    <title>Utkarsh Shah | Hardware & Edge-AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        /* Importing Jakarta for body, Playfair for elegant headings */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #0a0a0b; /* Very deep, rich black/gray */
+            background-color: #0a0a0b; /* Jet Black */
             color: #e2e8f0; 
+            overflow-x: hidden;
         }
-        /* Luxurious Gold/Bronze Gradient */
+        
+        h1, h2, .serif-text {
+            font-family: 'Playfair Display', serif;
+        }
+
         .gradient-text { 
             background: linear-gradient(135deg, #d4af37, #f3e5ab, #aa7c11); 
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent; 
         }
-        .border-accent { border-color: #27272a; }
-        .hover-border-accent:hover { border-color: #d4af37; }
-        .bg-card { background-color: #111113; }
         
-        /* Smooth scrolling for the nav links */
+        .gold-text { color: #d4af37; }
+        .border-accent { border-color: #1a1a1f; }
+        .bg-card { background-color: #111113; }
         html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="antialiased selection:bg-yellow-600/30 selection:text-yellow-200">
+<body class="antialiased selection:bg-[#d4af37]/30 selection:text-[#f3e5ab]">
 
-    <nav class="fixed w-full z-50 bg-[#0a0a0b]/80 backdrop-blur-md border-b border-accent">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-wider text-white">US<span class="text-[#d4af37]">.</span></span>
-            <div class="space-x-8 hidden md:flex text-sm font-medium text-slate-400">
+    <nav class="fixed w-full z-50 bg-[#0a0a0b]/90 backdrop-blur-md border-b border-accent py-4">
+        <div class="max-w-[90rem] mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-wider text-white serif-text">Utkarsh<span class="gold-text italic pr-1">Shah</span></span>
+            
+            <div class="space-x-8 hidden md:flex text-[11px] font-bold tracking-[0.15em] text-slate-400 uppercase">
                 <a href="#about" class="hover:text-white transition duration-300">About</a>
                 <a href="#education" class="hover:text-white transition duration-300">Education</a>
-                <a href="#skills" class="hover:text-white transition duration-300">Expertise</a>
+                <a href="#skills" class="hover:text-white transition duration-300">Skills</a>
                 <a href="#projects" class="hover:text-white transition duration-300">Projects</a>
-                <a href="#iot" class="hover:text-white transition duration-300">IoT Specialization</a>
+                <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
             </div>
-            <div class="flex space-x-5 text-slate-400">
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github text-lg"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin text-lg"></i></a>
-            </div>
+            
+            <a href="mailto:avi2005jain@gmail.com" class="bg-[#d4af37] hover:bg-[#c19b2e] text-black text-[10px] font-bold uppercase tracking-[0.15em] px-6 py-2.5 rounded-full transition duration-300">
+                Resume
+            </a>
         </div>
     </nav>
 
-    <section class="pt-32 pb-6 px-6 min-h-screen flex flex-col justify-between relative">
-        <div class="max-w-7xl mx-auto w-full flex-grow flex flex-col lg:flex-row items-center justify-between gap-16 mt-16 lg:mt-24">
+    <section class="pt-32 pb-6 px-6 lg:px-12 min-h-screen flex flex-col justify-between relative border-b border-accent">
+        <div class="max-w-[90rem] mx-auto w-full flex-grow flex flex-col lg:flex-row items-center justify-between gap-16 mt-16 lg:mt-24">
             
             <div class="lg:w-[55%] flex flex-col items-start text-left">
-                
                 <div class="flex items-center gap-4 text-[10px] md:text-xs font-semibold tracking-[0.2em] text-slate-500 uppercase mb-8">
                     <div class="w-8 md:w-12 h-px bg-[#d4af37]"></div>
                     <span>ECE Student &nbsp;&middot;&nbsp; Gandhinagar</span>
                 </div>
                 
-                <h1 class="text-7xl md:text-8xl lg:text-[7.5rem] leading-none mb-6" style="font-family: 'Playfair Display', serif;">
+                <h1 class="text-7xl md:text-8xl lg:text-[7.5rem] leading-none mb-6">
                     <span class="text-white block font-normal tracking-tight">Utkarsh</span>
-                    <span class="gradient-text italic font-medium block pr-4">Shah</span>
+                    <span class="gold-text italic font-medium block pr-4">Shah</span>
                 </h1>
                 
                 <p class="text-slate-300 text-sm md:text-base font-medium tracking-wide mb-8">
@@ -66,15 +72,15 @@
                     <span class="text-slate-500 font-normal mt-1 block">Pandit Deendayal Energy University</span>
                 </p>
                 
-                <p class="text-slate-400 italic text-sm md:text-base border-l-2 border-[#27272a] pl-5 mb-12 max-w-md">
+                <p class="text-slate-400 italic text-sm md:text-base border-l-2 border-[#1a1a1f] pl-5 mb-12 max-w-md">
                     "Architecting the future of high-speed hardware and intelligent edge devices through RTL design and Artificial Intelligence."
                 </p>
                 
                 <div class="flex items-center gap-8">
-                    <a href="#projects" class="bg-[#111113] border border-[#27272a] hover:border-[#d4af37] text-white text-[11px] font-bold uppercase tracking-[0.15em] px-8 py-4 rounded-full transition duration-300 shadow-lg hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] flex items-center gap-2 group">
-                        View Projects <i class="fa-solid fa-arrow-right text-[#d4af37] group-hover:translate-x-1 transition-transform"></i>
+                    <a href="#projects" class="bg-[#111113] border border-[#27272a] hover:border-[#d4af37] text-white text-[11px] font-bold uppercase tracking-[0.15em] px-8 py-4 rounded-full transition duration-300 shadow-lg hover:shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                        View Projects &nearr;
                     </a>
-                    <a href="mailto:avi2005jain@gmail.com?subject=Portfolio%20Inquiry" class="text-slate-300 text-[11px] font-bold uppercase tracking-[0.15em] hover:text-[#d4af37] transition duration-300">
+                    <a href="#contact" class="text-slate-300 text-[11px] font-bold uppercase tracking-[0.15em] hover:text-[#d4af37] transition duration-300">
                         Get In Touch
                     </a>
                 </div>
@@ -85,302 +91,363 @@
                     I am passionate about solving real-world engineering problems using Digital VLSI Design, ASIC Verification, and Edge-AI Systems. I bridge the gap between high-speed SoC interconnects and intelligent hardware-software integration to build robust architectures.
                 </p>
                 
-                <div class="grid grid-cols-3 gap-6 border-t border-[#1a1a1f] pt-10">
+                <div class="grid grid-cols-3 gap-6 border-t border-accent pt-10">
                     <div>
-                        <div class="text-3xl md:text-4xl text-[#d4af37] mb-2" style="font-family: 'Playfair Display', serif;">3<span class="text-xl">+</span></div>
-                        <div class="text-[10px] md:text-xs text-slate-500 leading-relaxed uppercase tracking-widest font-medium">Core<br>Projects</div>
+                        <div class="text-4xl text-[#d4af37] mb-2 serif-text">3<span class="text-2xl font-sans">+</span></div>
+                        <div class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest font-semibold">Core<br>Projects</div>
                     </div>
                     <div>
-                        <div class="text-3xl md:text-4xl text-[#d4af37] mb-2" style="font-family: 'Playfair Display', serif;">8.07</div>
-                        <div class="text-[10px] md:text-xs text-slate-500 leading-relaxed uppercase tracking-widest font-medium">Current<br>CGPA</div>
+                        <div class="text-4xl text-[#d4af37] mb-2 serif-text">8.07</div>
+                        <div class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest font-semibold">Current<br>CGPA</div>
                     </div>
                     <div>
-                        <div class="text-3xl md:text-4xl text-[#d4af37] mb-2" style="font-family: 'Playfair Display', serif;">1<span class="text-xl pl-1">ms</span></div>
-                        <div class="text-[10px] md:text-xs text-slate-500 leading-relaxed uppercase tracking-widest font-medium">AI Inference<br>Latency</div>
+                        <div class="text-4xl text-[#d4af37] mb-2 serif-text">1<span class="text-2xl font-sans pl-1">ms</span></div>
+                        <div class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest font-semibold">AI Inference<br>Latency</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-center mt-20 mb-4 pt-8 border-t border-[#1a1a1f]">
-            
+        <div class="max-w-[90rem] mx-auto w-full flex flex-col md:flex-row justify-between items-center mt-20 mb-4 pt-8 border-t border-accent">
             <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6 md:mb-0">
-                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[11px] text-slate-400 font-medium tracking-widest uppercase hover:border-[#d4af37] transition cursor-default">Verilog</span>
-                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[11px] text-slate-400 font-medium tracking-widest uppercase hover:border-[#d4af37] transition cursor-default">SystemVerilog</span>
-                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[11px] text-slate-400 font-medium tracking-widest uppercase hover:border-[#d4af37] transition cursor-default">AXI4</span>
-                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[11px] text-slate-400 font-medium tracking-widest uppercase hover:border-[#d4af37] transition cursor-default">TinyML</span>
-                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[11px] text-slate-400 font-medium tracking-widest uppercase hover:border-[#d4af37] transition cursor-default">C/C++</span>
+                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-400 font-bold tracking-[0.15em] uppercase hover:border-[#d4af37] transition cursor-default">Verilog</span>
+                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-400 font-bold tracking-[0.15em] uppercase hover:border-[#d4af37] transition cursor-default">SystemVerilog</span>
+                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-400 font-bold tracking-[0.15em] uppercase hover:border-[#d4af37] transition cursor-default">AXI4</span>
+                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-400 font-bold tracking-[0.15em] uppercase hover:border-[#d4af37] transition cursor-default">TinyML</span>
+                <span class="px-4 py-1.5 rounded-full border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-400 font-bold tracking-[0.15em] uppercase hover:border-[#d4af37] transition cursor-default">C/C++</span>
             </div>
-            
             <a href="#about" class="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold hover:text-[#d4af37] transition flex items-center gap-3">
-                Scroll <i class="fa-solid fa-arrow-down animate-bounce text-sm"></i>
+                Scroll &darr;
             </a>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 bg-[#0d0d0f] border-t border-accent">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+    <section id="about" class="py-32 px-6 lg:px-12 border-b border-accent bg-[#0d0d0f]">
+        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <div class="lg:col-span-4">
+                <div class="text-[5rem] lg:text-[7rem] leading-none text-slate-200 serif-text mb-4 opacity-90">01</div>
+                <h2 class="text-4xl lg:text-5xl text-white serif-text leading-tight mb-2">About</h2>
+                <h2 class="text-4xl lg:text-5xl gold-text italic serif-text leading-tight mb-8">Me</h2>
+                <p class="text-slate-500 text-lg lg:text-xl font-light tracking-wide">
+                    Hardware architect,<br>Edge-AI innovator.
+                </p>
+            </div>
+
+            <div class="lg:col-span-8 lg:pl-12 flex flex-col justify-center space-y-10">
+                <p class="text-2xl lg:text-3xl text-slate-300 font-light leading-relaxed">
+                    I am a dedicated Electronics and Communication Engineering student at PDEU, maintaining a CGPA of 8.07. My core passion lies at the intersection of complex digital hardware design and embedded artificial intelligence.
+                </p>
+                <p class="text-xl lg:text-2xl text-slate-400 font-light leading-relaxed">
+                    My expertise is heavily focused on <span class="text-white font-medium">System-on-Chip (SoC) architecture</span>. I specialize in designing and verifying industry-standard bus protocols, specifically the AMBA AXI4-Full specification. By combining RTL design with rigorous SystemVerilog Object-Oriented verification (CRV and SVA), I ensure the creation of high-throughput, zero-defect silicon.
+                </p>
+                <p class="text-xl lg:text-2xl text-slate-400 font-light leading-relaxed">
+                    Beyond the register-transfer level, I engineer end-to-end <span class="text-white font-medium">Edge-AI solutions</span>. I design firmware and quantize neural networks (TinyML) to deploy predictive maintenance diagnostics directly onto resource-constrained microcontrollers, eliminating the need for cloud compute in industrial environments.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="education" class="py-32 px-6 lg:px-12 border-b border-accent bg-[#0a0a0b]">
+        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <div class="lg:col-span-4">
+                <div class="text-[5rem] lg:text-[7rem] leading-none text-slate-200 serif-text mb-4 opacity-90">02</div>
+                <h2 class="text-4xl lg:text-5xl text-white serif-text leading-tight mb-2">Academic</h2>
+                <h2 class="text-4xl lg:text-5xl gold-text italic serif-text leading-tight mb-8">Journey</h2>
+            </div>
+
+            <div class="lg:col-span-8 lg:pl-12 flex flex-col justify-center mt-8 lg:mt-0">
+                
+                <div class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-2 md:gap-8 mb-16 group">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-[#d4af37] uppercase pt-1.5">
+                        Current
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl text-white font-semibold mb-2 group-hover:text-[#d4af37] transition duration-300">B.Tech — Electronics & Communication Eng.</h3>
+                        <p class="text-slate-400 text-sm md:text-base font-medium mb-1">Pandit Deendayal Energy University, Gandhinagar</p>
+                        <p class="text-slate-500 text-xs tracking-widest uppercase font-semibold">CGPA: 8.07 / 10.0</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-2 md:gap-8 mb-16 group">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-[#d4af37] uppercase pt-1.5">
+                        2021 - 2023
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl text-white font-semibold mb-2 group-hover:text-[#d4af37] transition duration-300">Higher Secondary Education</h3>
+                        <p class="text-slate-400 text-sm md:text-base font-medium mb-1">Delhi Public School, Gandhinagar</p>
+                        <p class="text-slate-500 text-xs tracking-widest uppercase font-semibold">CBSE Board &nbsp;&middot;&nbsp; Science Stream</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-2 md:gap-8 group">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-[#d4af37] uppercase pt-1.5">
+                        2008 - 2021
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl text-white font-semibold mb-2 group-hover:text-[#d4af37] transition duration-300">Secondary School Certificate</h3>
+                        <p class="text-slate-400 text-sm md:text-base font-medium mb-1">Delhi Public School, Gandhinagar</p>
+                        <p class="text-slate-500 text-xs tracking-widest uppercase font-semibold">CBSE Board</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-32 px-6 lg:px-12 border-b border-accent bg-[#0d0d0f]">
+        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <div class="lg:col-span-4">
+                <div class="text-[5rem] lg:text-[7rem] leading-none text-slate-200 serif-text mb-4 opacity-90">03</div>
+                <h2 class="text-4xl lg:text-5xl text-white serif-text leading-tight mb-2">What I</h2>
+                <h2 class="text-4xl lg:text-5xl gold-text italic serif-text leading-tight mb-8">Work With</h2>
+                <p class="text-slate-500 text-lg lg:text-xl font-light tracking-wide max-w-sm">
+                    A toolkit spanning complex hardware architecture to edge intelligence.
+                </p>
+            </div>
+
+            <div class="lg:col-span-8 lg:pl-12 flex flex-col">
+                
+                <div class="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-8 border-b border-[#1a1a1f] pb-10 mb-10">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-slate-500 uppercase pt-2">
+                        Hardware Design
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Verilog (RTL)</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">AMBA AXI4-Full</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Micro-architecture</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">3-Block FSMs</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">UART/FIFOs</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-8 border-b border-[#1a1a1f] pb-10 mb-10">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-slate-500 uppercase pt-2">
+                        ASIC Verification
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">SystemVerilog</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">SVA (Assertions)</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Constrained Random (CRV)</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Functional Coverage</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-8 border-b border-[#1a1a1f] pb-10 mb-10">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-slate-500 uppercase pt-2">
+                        Edge-AI & IoT
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">TinyML</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">TensorFlow Lite</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">ESP32 Firmware</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">DSP / FFT</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Predictive Maintenance</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-8">
+                    <div class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-slate-500 uppercase pt-2">
+                        Software & Tools
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">C / C++</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Python</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Xilinx Vivado</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">Icarus/GTKWave</span>
+                        <span class="px-5 py-2 rounded-md border border-[#27272a] bg-[#111113] text-xs text-slate-300 font-semibold tracking-wide hover:border-[#d4af37] transition cursor-default">MATLAB</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-32 px-6 lg:px-12 border-b border-accent bg-[#0a0a0b]">
+        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <div class="lg:col-span-4">
+                <div class="text-[5rem] lg:text-[7rem] leading-none text-slate-200 serif-text mb-4 opacity-90">04</div>
+                <h2 class="text-4xl lg:text-5xl text-white serif-text leading-tight mb-2">Engineering</h2>
+                <h2 class="text-4xl lg:text-5xl gold-text italic serif-text leading-tight mb-8">Builds</h2>
+            </div>
+
+            <div class="lg:col-span-8 lg:pl-12 flex flex-col mt-8 lg:mt-0">
+                
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 border-b border-[#1a1a1f] pb-16 mb-16 group">
+                    <div class="text-3xl text-slate-500 serif-text pt-1 group-hover:text-[#d4af37] transition duration-300">01</div>
+                    <div>
+                        <div class="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#d4af37] uppercase mb-4">
+                            Hardware Design &middot; Verification
+                        </div>
+                        <h3 class="text-2xl md:text-3xl text-white font-semibold mb-4 serif-text">Full AXI4 Slave IP Design</h3>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
+                            Architected an industry-standard AMBA AXI4-Full Slave IP supporting high-bandwidth burst transactions (INCR/WRAP). Implemented a rigorous 3-block FSM to decouple Address, Data, and Response channels for high-frequency timing closure. Developed a layered SystemVerilog OOP testbench with Constrained Random Verification (CRV) and integrated SystemVerilog Assertions (SVA) for real-time protocol compliance monitoring.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">Verilog</span>
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">SystemVerilog</span>
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">SVA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 border-b border-[#1a1a1f] pb-16 mb-16 group">
+                    <div class="text-3xl text-slate-500 serif-text pt-1 group-hover:text-[#d4af37] transition duration-300">02</div>
+                    <div>
+                        <div class="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#d4af37] uppercase mb-4">
+                            TinyML &middot; Embedded AI
+                        </div>
+                        <h3 class="text-2xl md:text-3xl text-white font-semibold mb-4 serif-text">Edge-Native Prognostics (PdM)</h3>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
+                            Developed a localized Predictive Maintenance system utilizing TinyML on an ESP32 to eliminate cloud latency. Engineered an on-device Digital Signal Processing (DSP) pipeline utilizing FFT to extract spectral features from vibration data. Trained and quantized a Deep Neural Network using 7 hours of organic data, achieving an MSE of 5.27.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">C++</span>
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">TensorFlow Lite</span>
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">DSP / FFT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="text-3xl text-slate-500 serif-text pt-1 group-hover:text-[#d4af37] transition duration-300">03</div>
+                    <div>
+                        <div class="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#d4af37] uppercase mb-4">
+                            Digital Logic &middot; Architecture
+                        </div>
+                        <h3 class="text-2xl md:text-3xl text-white font-semibold mb-4 serif-text">UART Subsystem with FIFO Flow Control</h3>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
+                            Designed a full-duplex UART transmitter and receiver module from scratch in Verilog. Integrated independent, asynchronous TX/RX Circular FIFOs to successfully decouple serial I/O from the main system clock. Built robust state machines for frame synchronization, parity checking, and start/stop bit detection.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">Verilog</span>
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">FSM Design</span>
+                            <span class="px-3 py-1 rounded border border-[#27272a] bg-[#0d0d0f] text-[10px] text-slate-500 font-bold uppercase tracking-widest">Icarus/GTKWave</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="iot" class="py-32 px-6 lg:px-12 border-b border-accent bg-[#0d0d0f]">
+        <div class="max-w-[90rem] mx-auto flex flex-col">
+            
+            <div class="mb-20">
+                <div class="text-[5rem] lg:text-[7rem] leading-none text-slate-200 serif-text mb-4 opacity-90">05</div>
+                <h2 class="text-4xl lg:text-5xl text-white serif-text leading-tight mb-2">Advanced IoT</h2>
+                <h2 class="text-4xl lg:text-5xl gold-text italic serif-text leading-tight mb-8">Specialization Track</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+                
+                <div>
+                    <i class="fa-solid fa-network-wired text-3xl text-[#d4af37] mb-6"></i>
+                    <h3 class="text-xl text-white font-semibold mb-3 serif-text">Architectural Foundations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Mastered the Physical and Logical Design of IoT, including sensor working principles, actuator integration, and communication models. Evaluated efficiency trade-offs for Industrial IoT (IIoT) and SCADA systems.
+                    </p>
+                    <span class="text-[10px] text-slate-500 font-bold tracking-[0.15em] uppercase">Sem III &middot; NPTEL</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wifi text-3xl text-[#d4af37] mb-6"></i>
+                    <h3 class="text-xl text-white font-semibold mb-3 serif-text">Networks & Protocols</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Deep dive into Wireless Ad Hoc and Sensor Networks (WSN). Designed infrastructures using IPv6 over Low-Power Wireless Personal Area Networks (6LoWPAN). Analyzed MQTT Protocol and QoS provisioning.
+                    </p>
+                    <span class="text-[10px] text-slate-500 font-bold tracking-[0.15em] uppercase">Sem IV</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-microchip text-3xl text-[#d4af37] mb-6"></i>
+                    <h3 class="text-xl text-white font-semibold mb-3 serif-text">Embedded Edge-AI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Specialized in Hardware/Software Co-design for embedded platforms. Programmed RTOS-based task performances and implemented low-level serial protocols (UART, I2C, SPI).
+                    </p>
+                    <span class="text-[10px] text-slate-500 font-bold tracking-[0.15em] uppercase">Sem V</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chart-line text-3xl text-[#d4af37] mb-6"></i>
+                    <h3 class="text-xl text-white font-semibold mb-3 serif-text">Data Analytics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Implemented Predictive Analytics using regression and random forests. Handled real-time constraints for IoT data using Python, Pandas, and NumPy to extract actionable intelligence from hardware telemetry.
+                    </p>
+                    <span class="text-[10px] text-slate-500 font-bold tracking-[0.15em] uppercase">Sem VI</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 px-6 lg:px-12 bg-[#0a0a0b]">
+        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
             
             <div>
-                <div class="flex items-center gap-3 mb-8">
-                    <i class="fa-regular fa-user text-[#d4af37] text-2xl"></i>
-                    <h2 class="text-3xl font-bold text-white">About Me</h2>
-                </div>
-                <div class="space-y-6 text-slate-400 leading-relaxed font-light">
-                    <p>
-                        I am a dedicated Electronics and Communication Engineering student at Pandit Deendayal Energy University (PDEU), maintaining a CGPA of 8.07/10. My core passion lies at the intersection of complex digital hardware design and embedded artificial intelligence.
-                    </p>
-                    <p>
-                        My expertise is heavily focused on <strong class="text-white font-medium">System-on-Chip (SoC) architecture</strong>. I specialize in designing and verifying industry-standard bus protocols, specifically the AMBA AXI4-Full specification. By combining RTL design with rigorous SystemVerilog Object-Oriented verification (CRV and SVA), I ensure the creation of high-throughput, zero-defect silicon.
-                    </p>
-                    <p>
-                        Beyond the register-transfer level, I engineer end-to-end <strong class="text-white font-medium">Edge-AI solutions</strong>. I design firmware and quantize neural networks (TinyML) to deploy predictive maintenance diagnostics directly onto resource-constrained microcontrollers, eliminating the need for cloud compute in industrial environments.
-                    </p>
-                </div>
-            </div>
-
-            <div id="education" class="bg-card p-8 rounded-2xl border border-accent">
-                <h2 class="text-2xl font-bold text-white mb-8">Education</h2>
+                <div class="text-[5rem] lg:text-[7rem] leading-none text-slate-200 serif-text mb-4 opacity-90">06</div>
+                <h2 class="text-4xl lg:text-5xl text-white serif-text leading-tight mb-2">Let's</h2>
+                <h2 class="text-4xl lg:text-5xl gold-text italic serif-text leading-tight mb-12">Connect</h2>
                 
-                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-800 before:to-transparent">
+                <p class="text-2xl md:text-3xl text-slate-300 font-light leading-relaxed mb-16 max-w-lg">
+                    I'm always open to new opportunities, collaborations, and conversations about high-performance hardware and Edge-AI integration.
+                </p>
+
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-10 h-10 rounded bg-[#111113] border border-[#27272a] flex items-center justify-center text-[#d4af37]">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mb-1">Email</div>
+                            <a href="mailto:avi2005jain@gmail.com" class="text-white text-sm hover:text-[#d4af37] transition">avi2005jain@gmail.com</a>
+                        </div>
+                    </div>
                     
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                        <div class="flex items-center justify-center w-5 h-5 rounded-full border-2 border-[#d4af37] bg-[#0a0a0b] group-[.is-active]:bg-[#d4af37] text-slate-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
-                        <div class="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] pl-4 md:pl-0 md:group-odd:text-right md:group-odd:pr-4 md:group-even:pl-4">
-                            <div class="flex items-center justify-between md:group-odd:justify-end mb-1">
-                                <h3 class="font-bold text-white text-lg">PDEU, Gandhinagar</h3>
-                            </div>
-                            <div class="text-[#d4af37] text-sm font-medium mb-2">2023 - 2027</div>
-                            <div class="text-slate-300 text-sm mb-1">B.Tech in Electronics & Communication</div>
-                            <div class="text-slate-500 text-xs">CGPA: 8.07/10.0</div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-10 h-10 rounded bg-[#111113] border border-[#27272a] flex items-center justify-center text-[#d4af37]">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mb-1">Location</div>
+                            <div class="text-white text-sm">Ahmedabad, India</div>
                         </div>
                     </div>
 
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                        <div class="flex items-center justify-center w-5 h-5 rounded-full border-2 border-slate-700 bg-[#0a0a0b] text-slate-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
-                        <div class="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] pl-4 md:pl-0 md:group-odd:text-right md:group-odd:pr-4 md:group-even:pl-4">
-                            <div class="flex items-center justify-between md:group-odd:justify-end mb-1">
-                                <h3 class="font-bold text-white text-lg">DPS, Gandhinagar</h3>
-                            </div>
-                            <div class="text-slate-500 text-sm font-medium mb-2">2008 - 2023</div>
-                            <div class="text-slate-300 text-sm">Primary & Higher Secondary Education</div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-10 h-10 rounded bg-[#111113] border border-[#27272a] flex items-center justify-center text-[#d4af37]">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mb-1">University</div>
+                            <div class="text-white text-sm">PDEU, Gandhinagar</div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
-  
-    <section id="skills" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-white text-center mb-4">Technical Expertise</h2>
-            <div class="w-16 h-1 bg-[#d4af37] mx-auto mb-16 rounded-full"></div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-microchip text-[#d4af37] text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Hardware Design</h3>
-                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Proficient in micro-architecture design and translating complex state machines into synthesizable RTL.</p>
-                    <ul class="text-slate-300 text-sm space-y-3">
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Languages:</strong> Verilog (RTL & FSM)</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Protocols:</strong> AMBA AXI4-Full, UART</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Concepts:</strong> 3-Block FSMs, FIFOs, Flow Control</li>
-                    </ul>
-                </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-shield-check text-[#d4af37] text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">ASIC Verification</h3>
-                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Experienced in building robust verification environments using OOP concepts to ensure protocol compliance.</p>
-                    <ul class="text-slate-300 text-sm space-y-3">
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Languages:</strong> SystemVerilog</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Techniques:</strong> CRV, SVA (Assertions)</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Architecture:</strong> Layered Testbenches (Driver, Scoreboard)</li>
-                    </ul>
-                </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-brain text-[#d4af37] text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Software & Edge-AI</h3>
-                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Strong foundation in deploying intelligence directly onto resource-constrained microcontrollers.</p>
-                    <ul class="text-slate-300 text-sm space-y-3">
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Programming:</strong> C/C++, Python</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Frameworks:</strong> TinyML, TensorFlow Lite</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Domains:</strong> IoT Firmware, Machine Learning</li>
-                    </ul>
-                </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-screwdriver-wrench text-[#d4af37] text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">EDA & Tools</h3>
-                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Proficient with industry-standard Electronic Design Automation software and development environments.</p>
-                    <ul class="text-slate-300 text-sm space-y-3">
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Simulation:</strong> Xilinx Vivado, Icarus Verilog</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Analysis:</strong> GTKWave</li>
-                        <li><span class="text-[#d4af37] mr-2">•</span> <strong class="text-white">Other:</strong> MATLAB, LTSpice, TCAD</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-24 px-6 bg-[#0d0d0f] border-t border-accent">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-white text-center mb-4">Key Projects</h2>
-            <div class="w-16 h-1 bg-[#d4af37] mx-auto mb-16 rounded-full"></div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col justify-center lg:pl-12">
+                <h3 class="text-2xl text-white serif-text italic mb-8">Send me a message and I'll get back to you soon.</h3>
                 
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 group">
-                    <div class="flex justify-between items-start mb-6">
-                        <h3 class="text-2xl font-bold text-white">Full AXI4 Slave IP Design</h3>
-                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Verilog / SV</span>
-                    </div>
-                    <p class="text-[#d4af37] text-sm font-medium mb-4">Hardware Design & Verification</p>
-                    <ul class="text-slate-400 text-sm space-y-3 mb-8 leading-relaxed list-disc list-inside">
-                        <li>Architected an industry-standard AMBA AXI4-Full Slave IP supporting high-bandwidth burst transactions (INCR/WRAP).</li>
-                        <li>Implemented a rigorous 3-block FSM to decouple Address, Data, and Response channels for high-frequency timing closure.</li>
-                        <li>Developed a layered SystemVerilog OOP testbench with Constrained Random Verification (CRV).</li>
-                        <li>Integrated SystemVerilog Assertions (SVA) for real-time protocol compliance monitoring (VALID/READY stability).</li>
-                    </ul>
-                    <div class="flex gap-3">
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">Verilog</span>
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">SystemVerilog</span>
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">SVA</span>
-                    </div>
-                </div>
+                <a href="mailto:avi2005jain@gmail.com?subject=Portfolio%20Inquiry" class="w-full flex items-center justify-center gap-4 bg-[#111113] border border-[#27272a] hover:border-[#d4af37] text-slate-300 hover:text-white px-8 py-6 rounded-md font-bold tracking-[0.1em] uppercase text-xs transition duration-300 mb-16 shadow-lg group cursor-pointer">
+                    <i class="fa-brands fa-google text-lg text-[#ea4335] group-hover:scale-110 transition-transform"></i>
+                    Send Message via Gmail
+                </a>
 
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 group">
-                    <div class="flex justify-between items-start mb-6">
-                        <h3 class="text-2xl font-bold text-white">Edge-Native Prognostics (PdM)</h3>
-                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">TinyML / IoT</span>
-                    </div>
-                    <p class="text-[#d4af37] text-sm font-medium mb-4">Research & Embedded AI</p>
-                    <ul class="text-slate-400 text-sm space-y-3 mb-8 leading-relaxed list-disc list-inside">
-                        <li>Developed a localized Predictive Maintenance system utilizing TinyML on an ESP32 to eliminate cloud latency.</li>
-                        <li>Engineered an on-device Digital Signal Processing (DSP) pipeline utilizing FFT to extract spectral features from vibration data.</li>
-                        <li>Trained and quantized a Deep Neural Network using 7 hours of organic data, achieving an MSE of 5.27.</li>
-                        <li>Authored a comprehensive research manuscript detailing the Autonomous Dispatch Loop architecture.</li>
-                    </ul>
-                    <div class="flex gap-3">
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">C++</span>
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">TensorFlow Lite</span>
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">DSP</span>
-                    </div>
+                <div class="border-t border-[#1a1a1f] pt-8 flex flex-col items-start">
+                    <span class="text-[10px] text-slate-500 uppercase tracking-widest mb-3 font-semibold">Live Analytics</span>
+                    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FUtkarshShah-Portfolio&labelColor=%230a0a0b&countColor=%23d4af37&style=flat-square&labelStyle=upper" alt="Visitor Count" class="opacity-80 hover:opacity-100 transition shadow-[0_0_10px_rgba(212,175,55,0.1)]">
                 </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 group md:col-span-2">
-                    <div class="flex justify-between items-start mb-6">
-                        <h3 class="text-2xl font-bold text-white">UART Subsystem with FIFO Flow Control</h3>
-                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">RTL Architecture</span>
-                    </div>
-                    <p class="text-[#d4af37] text-sm font-medium mb-4">Digital Logic Design</p>
-                    <ul class="text-slate-400 text-sm space-y-3 mb-8 leading-relaxed list-disc list-inside">
-                        <li>Designed a full-duplex UART transmitter and receiver module from scratch in Verilog.</li>
-                        <li>Integrated independent, asynchronous TX/RX Circular FIFOs to successfully decouple serial I/O from the main system clock.</li>
-                        <li>Built robust state machines for frame synchronization, parity checking, and start/stop bit detection.</li>
-                        <li>Verified end-to-end data integrity using a self-checking testbench, stress-testing buffer overflow and underflow scenarios.</li>
-                    </ul>
-                    <div class="flex gap-3">
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">Verilog</span>
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">FSM Design</span>
-                        <span class="text-xs px-2 py-1 bg-slate-800 rounded text-slate-400">Icarus/GTKWave</span>
-                    </div>
-                </div>
-
             </div>
+
         </div>
-    </section>
-    <section id="iot" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-white text-center mb-4">Advanced IoT & Edge Computing Specialization</h2>
-            <div class="w-16 h-1 bg-[#d4af37] mx-auto mb-6 rounded-full"></div>
-            <p class="text-center text-slate-400 max-w-2xl mx-auto mb-16 leading-relaxed">
-                A rigorous, four-semester institutional and NPTEL-certified track focused on the physical, network, and data layers of modern cyber-physical systems.
-            </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative before:hidden md:before:block before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-full before:h-0.5 before:bg-gradient-to-r before:from-transparent before:via-slate-800 before:to-transparent">
-                
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 relative z-10 md:-translate-y-4">
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-[#0a0a0b] border border-[#d4af37] flex items-center justify-center text-[#d4af37] font-bold">01</div>
-                        <span class="text-xs font-semibold px-3 py-1 rounded bg-[#d4af37]/10 text-[#d4af37] border border-[#d4af37]/20">Institutional & NPTEL Certified</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Architectural Foundations of IoT</h3>
-                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">
-                        Mastered the Physical and Logical Design of IoT, including sensor working principles, actuator integration, and communication models (Publish-Subscribe, Push-Pull). Evaluated efficiency trade-offs for Industrial IoT (IIoT) and SCADA systems.
-                    </p>
-                </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 relative z-10 md:translate-y-4">
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-[#0a0a0b] border border-[#d4af37] flex items-center justify-center text-[#d4af37] font-bold">02</div>
-                        <span class="text-xs font-semibold px-3 py-1 rounded bg-slate-800 text-slate-400 border border-slate-700">Protocol Engineering</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">IoT Networks and Protocols</h3>
-                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">
-                        Deep dive into Wireless Ad Hoc and Sensor Networks (WSN). Designed infrastructures using IPv6 over Low-Power Wireless Personal Area Networks (6LoWPAN). Analyzed MQTT Protocol and QoS provisioning for high-reliability telemetry.
-                    </p>
-                </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 relative z-10 md:-translate-y-4">
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-[#0a0a0b] border border-[#d4af37] flex items-center justify-center text-[#d4af37] font-bold">03</div>
-                        <span class="text-xs font-semibold px-3 py-1 rounded bg-slate-800 text-slate-400 border border-slate-700">Firmware & Hardware</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Embedded Systems for Edge-AI</h3>
-                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">
-                        Specialized in Hardware/Software Co-design for embedded platforms. Programmed RTOS-based task performances and implemented low-level serial protocols (UART, I2C, SPI). Developed robust firmware for multi-sensor data acquisition.
-                    </p>
-                </div>
-
-                <div class="bg-card p-8 rounded-2xl border border-accent hover-border-accent transition duration-300 relative z-10 md:translate-y-4">
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-[#0a0a0b] border border-[#d4af37] flex items-center justify-center text-[#d4af37] font-bold">04</div>
-                        <span class="text-xs font-semibold px-3 py-1 rounded bg-slate-800 text-slate-400 border border-slate-700">Data Science & ML</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Data Analytics and Visualization</h3>
-                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">
-                        Implemented Predictive Analytics using linear/logistic regression and random forests. Handled real-time constraints for IoT data using Python, Pandas, and NumPy to extract actionable intelligence from raw hardware telemetry.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="pt-16 pb-8 border-t border-accent bg-[#0a0a0b]">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
-            
-            <h2 class="text-3xl font-bold text-white mb-6">Ready to collaborate?</h2>
-            
-            <a href="mailto:avi2005jain@gmail.com?subject=Portfolio%20Inquiry" class="inline-flex items-center gap-3 bg-[#111113] border border-[#27272a] hover:border-[#d4af37] text-slate-300 hover:text-white px-8 py-4 rounded-xl font-semibold transition duration-300 mb-12 shadow-lg hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] group">
-                <i class="fa-brands fa-google text-xl text-[#ea4335] group-hover:scale-110 transition-transform"></i>
-                <span>Send an Email</span>
-            </a>
-
-            <div class="mb-8 flex flex-col items-center">
-                <span class="text-xs text-slate-500 uppercase tracking-widest mb-2 font-semibold">Portfolio Views</span>
-                <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FUtkarshShah-Portfolio&labelColor=%230a0a0b&countColor=%23d4af37&style=flat-square&labelStyle=upper" alt="Visitor Count" class="opacity-80 hover:opacity-100 transition shadow-[0_0_10px_rgba(212,175,55,0.1)]">
-            </div>
-
-            <div class="w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#1a1a1f] text-sm text-slate-600">
-                <p>&copy; 2026 Utkarsh Shah. Built with Precision.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-[#d4af37] transition">GitHub</a>
-                    <a href="#" class="hover:text-[#d4af37] transition">LinkedIn</a>
-                    <a href="#" class="hover:text-[#d4af37] transition">Resume</a>
-                </div>
-            </div>
+        <div class="max-w-[90rem] mx-auto mt-24 pt-8 border-t border-[#1a1a1f] flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs text-slate-600 tracking-wide">
+            <p>&copy; 2026 Utkarsh Shah &middot; Electronics & Communication Engineering</p>
+            <p class="mt-4 md:mt-0">Built with precision in <span class="gold-text italic serif-text text-sm">Ahmedabad, India</span></p>
         </div>
     </footer>
 
